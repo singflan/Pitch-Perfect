@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lKg-c4-67A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lKg-c4-67A">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,7 +9,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,7 +36,6 @@
                                 <state key="normal" image="stop@2x-iphone"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRG-8n-bxr"/>
-                                    <segue destination="07Q-6l-AgX" kind="show" id="Sw0-TM-P3j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,6 +54,7 @@
                         <outlet property="recordButton" destination="xj6-DZ-dLk" id="lpe-oH-eoT"/>
                         <outlet property="recordingLabel" destination="oHu-7f-gfA" id="0O6-yx-xaZ"/>
                         <outlet property="stopButton" destination="Qj6-op-wgn" id="6t3-aI-N1n"/>
+                        <segue destination="07Q-6l-AgX" kind="show" identifier="stopRecording" id="g6u-O4-Uc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,6 +84,7 @@
                                 <rect key="frame" x="275" y="542" width="50" height="50"/>
                                 <state key="normal" image="stop@2x-iphone"/>
                                 <connections>
+                                    <action selector="stopQuote:" destination="07Q-6l-AgX" eventType="touchUpInside" id="biQ-po-yR6"/>
                                     <action selector="stopQutoe:" destination="07Q-6l-AgX" eventType="touchUpInside" id="XKG-qs-f0M"/>
                                 </connections>
                             </button>
@@ -94,13 +95,31 @@
                                     <action selector="playQuoteQuickly:" destination="07Q-6l-AgX" eventType="touchUpInside" id="tci-bX-dvr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDD-4S-nUl">
+                                <rect key="frame" x="33" y="244" width="154" height="100"/>
+                                <state key="normal" image="chipmunk@2x-iphone"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="07Q-6l-AgX" eventType="touchUpInside" id="VLh-N5-cTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THR-0e-OlW">
+                                <rect key="frame" x="440" y="244" width="100" height="100"/>
+                                <state key="normal" image="darthvader@2x-iphone"/>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="07Q-6l-AgX" eventType="touchUpInside" id="TLi-oN-xIm"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.037095890739999998" blue="0.080171845359999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3OO-yi-jVc" firstAttribute="top" secondItem="umn-Mg-MVB" secondAttribute="bottom" constant="8" id="5Vg-dm-8h2"/>
+                            <constraint firstItem="MDD-4S-nUl" firstAttribute="top" secondItem="YWH-Dc-90X" secondAttribute="bottom" constant="72" id="BX0-Lg-yys"/>
                             <constraint firstItem="umn-Mg-MVB" firstAttribute="centerX" secondItem="Mh0-Po-cC3" secondAttribute="centerX" id="Dz5-7k-jaW"/>
                             <constraint firstItem="YWH-Dc-90X" firstAttribute="leading" secondItem="Mh0-Po-cC3" secondAttribute="leadingMargin" constant="40" id="R5u-Ot-YBf"/>
+                            <constraint firstItem="THR-0e-OlW" firstAttribute="top" secondItem="pik-KM-2fz" secondAttribute="bottom" constant="72" id="TPD-1a-Zjv"/>
                             <constraint firstItem="YWH-Dc-90X" firstAttribute="top" secondItem="exu-NW-gAg" secondAttribute="bottom" constant="8" id="WZr-kC-csB"/>
+                            <constraint firstItem="MDD-4S-nUl" firstAttribute="leading" secondItem="Mh0-Po-cC3" secondAttribute="leadingMargin" constant="40" id="dsF-GD-K8Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="THR-0e-OlW" secondAttribute="trailing" constant="40" id="fUC-T4-WcV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pik-KM-2fz" secondAttribute="trailing" constant="40" id="w2d-qs-CMd"/>
                             <constraint firstItem="pik-KM-2fz" firstAttribute="top" secondItem="exu-NW-gAg" secondAttribute="bottom" constant="8" id="wbx-NX-F3d"/>
                         </constraints>
@@ -130,6 +149,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk@2x-iphone" width="100" height="100"/>
+        <image name="darthvader@2x-iphone" width="100" height="100"/>
         <image name="fast@2x-iphone" width="100" height="100"/>
         <image name="microphone@2x-iphone" width="100" height="100"/>
         <image name="slow@2x-iphone" width="100" height="100"/>
