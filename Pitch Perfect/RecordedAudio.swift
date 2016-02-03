@@ -11,5 +11,11 @@ import Foundation
 class RecordedAudio: NSObject{
     var filePathUrl: NSURL!
     var title: String!
+    
+    // Creating an initializer for this class
+    init(filePathURL: NSURL, title: String) {
+        self.filePathUrl = filePathURL
+        self.title = title
+    }
 }
 

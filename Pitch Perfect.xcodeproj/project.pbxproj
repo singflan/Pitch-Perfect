@@ -14,7 +14,6 @@
 		6BF740171C4F38EF00797BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF740161C4F38EF00797BD2 /* Assets.xcassets */; };
 		6BF7401A1C4F38EF00797BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF740181C4F38EF00797BD2 /* LaunchScreen.storyboard */; };
 		6BF740221C50F5E500797BD2 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF740211C50F5E500797BD2 /* PlaySoundsViewController.swift */; };
-		6BF740241C5118A200797BD2 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BF740231C5118A200797BD2 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		6BF740191C4F38EF00797BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BF7401B1C4F38EF00797BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BF740211C50F5E500797BD2 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		6BF740231C5118A200797BD2 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../Udacity/movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				6BF740211C50F5E500797BD2 /* PlaySoundsViewController.swift */,
 				6B2362731C52538F00827319 /* RecordedAudio.swift */,
 				6BF740161C4F38EF00797BD2 /* Assets.xcassets */,
-				6BF740231C5118A200797BD2 /* movie_quote.mp3 */,
 				6BF740181C4F38EF00797BD2 /* LaunchScreen.storyboard */,
 				6BF7401B1C4F38EF00797BD2 /* Info.plist */,
 			);
@@ -133,7 +130,6 @@
 			files = (
 				6BF7401A1C4F38EF00797BD2 /* LaunchScreen.storyboard in Resources */,
 				6BF740171C4F38EF00797BD2 /* Assets.xcassets in Resources */,
-				6BF740241C5118A200797BD2 /* movie_quote.mp3 in Resources */,
 				6BF740151C4F38EF00797BD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
